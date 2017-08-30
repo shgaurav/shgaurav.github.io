@@ -17,6 +17,84 @@ html {
 
 }
 
+.parallax {
+  background: url('../parallax.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+.w3-display-topmiddle h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: rgba(255,255,255,.50);
+  background-image: url(http://viktor-cegan.wz.cz/ryba2.png);
+  background-repeat: repeat-x;
+
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite
+}
+
+.w3-display-topmiddle h3{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: rgba(255,255,255,.60);
+  background-image: url(http://viktor-cegan.wz.cz/ryba2.png);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate2 15s linear infinite
+}
+
+@keyframes animate
+{
+  0%
+  {
+    background-position: left 0px top 80px;
+  }
+
+   40%
+  {
+    background-position: left 800px top -50px;
+  }
+
+    80%
+  {
+    background-position: left 1800px top -50px;
+  }
+
+    100%
+  {
+    background-position: left 2400px top 80px;
+  }
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    background-position: left 0px top 80px;
+  }
+
+   40%
+  {
+    background-position: left 800px top -50px;
+  }
+
+    80%
+  {
+    background-position: left 1800px top -50px;
+  }
+
+    100%
+  {
+    background-position: left 2400px top 80px;
+  }
+}
+
 .w3-display-topmiddle{
 	padding-top: 150px;
 	text-align: center;
@@ -41,7 +119,7 @@ html {
 
 #row1 {
 	padding-top: 15px;
-	
+
 }
 
 #row2 {
@@ -60,7 +138,7 @@ html {
 }
 
 .card {
-	
+
 	max-width: 350px;
 	max-height: 400px
 }
@@ -136,7 +214,7 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
   text-align: center;
   text-decoration: none;
   letter-spacing: 0px;
-  
+
 }
 
 #space1 {
@@ -151,12 +229,12 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 
 .quote {
 	font-size: 22px;
-	
+
 }
 
 .aboutme{
 	padding-top: 15px;
-	
+
 
 }
 
@@ -188,5 +266,3 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 .brand {
 	text-align: right;
 }
-
-
