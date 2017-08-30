@@ -1,0 +1,268 @@
+.navbar {
+    background-color: #263238;
+    color: white;
+    padding-left: 495px
+}
+
+body {
+  font-family: 'Roboto', serif;
+}
+
+html {
+    overflow-y: hidden
+}
+
+.w3-jumbo::first-letter {
+	font-size: 150%;
+
+}
+
+.parallax {
+  background: url('../parallax.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+.w3-display-topmiddle h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: rgba(255,255,255,.50);
+  background-image: url(http://viktor-cegan.wz.cz/ryba2.png);
+  background-repeat: repeat-x;
+
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite
+}
+
+.w3-display-topmiddle h3{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: rgba(255,255,255,.60);
+  background-image: url(http://viktor-cegan.wz.cz/ryba2.png);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate2 15s linear infinite
+}
+
+@keyframes animate
+{
+  0%
+  {
+    background-position: left 0px top 80px;
+  }
+
+   40%
+  {
+    background-position: left 800px top -50px;
+  }
+
+    80%
+  {
+    background-position: left 1800px top -50px;
+  }
+
+    100%
+  {
+    background-position: left 2400px top 80px;
+  }
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    background-position: left 0px top 80px;
+  }
+
+   40%
+  {
+    background-position: left 800px top -50px;
+  }
+
+    80%
+  {
+    background-position: left 1800px top -50px;
+  }
+
+    100%
+  {
+    background-position: left 2400px top 80px;
+  }
+}
+
+.w3-display-topmiddle{
+	padding-top: 150px;
+	text-align: center;
+
+}
+
+.line-seperator {
+	height:1px;
+	background:#717171;
+	border-bottom:4px solid #313030;
+}
+
+.heading2{
+	padding-top: 50px;
+	font-size: 50px;
+}
+
+.heading3{
+	font-size: 50px;
+}
+
+
+#row1 {
+	padding-top: 15px;
+
+}
+
+#row2 {
+	padding-top: 30px;
+}
+
+#row3 {
+	padding-top: 30px;
+}
+
+
+.nav-link:hover {
+	background-color: #546e7a;
+	border-radius: 50px;
+	color: white;
+}
+
+.card {
+
+	max-width: 350px;
+	max-height: 400px
+}
+
+#card1{
+	margin-left: 150px
+}
+
+#card2{
+	margin-left: 78px
+}
+
+#card3{
+	margin-left: 0px
+}
+
+#bt1 {
+    background-color: ;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 50px;
+  	max-width: 127px;
+  	max-height: 35px;
+  	font-size: 11px;
+}
+
+#bt2 {
+    background-color: ;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 50px;
+  	max-width: 127px;
+  	max-height: 35px;
+  	font-size: 11px;
+}
+
+#bt3 {
+    background-color: ;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 50px;
+  	max-width: 127px;
+  	max-height: 35px;
+  	font-size: 11px;
+}
+
+#bt4 {
+    background-color: ;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 50px;
+  	max-width: 127px;
+  	max-height: 35px;
+  	font-size: 11px;
+}
+
+.semi-transparent-button {
+background: #fff; /* fallback color for old browsers */background: rgba(255, 255, 255, 0.5);
+
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0px;
+
+}
+
+#space1 {
+	padding-top: 10px
+}
+
+.quoteSection{
+	background-color: #78909C;
+	margin-top: 50px;
+	color: white;
+}
+
+.quote {
+	font-size: 22px;
+
+}
+
+.aboutme{
+	padding-top: 15px;
+
+
+}
+
+.aboutMeSection{
+	padding-bottom: 50px;
+
+}
+
+.circular--portrait {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+}
+
+.contactme{
+	text-align: center;
+}
+
+.btnicon {
+	height: 50px;
+	width: 50px;
+	border-radius:50%;
+}
+
+.footer-copyright{
+	margin-top: 20px;
+}
+
+.brand {
+	text-align: right;
+}
