@@ -117,18 +117,6 @@ html {
 }
 
 
-#row1 {
-	padding-top: 15px;
-
-}
-
-#row2 {
-	padding-top: 30px;
-}
-
-#row3 {
-	padding-top: 30px;
-}
 
 
 .nav-link:hover {
@@ -137,23 +125,21 @@ html {
 	color: white;
 }
 
+.container_cards {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  
+}
+
 .card {
 
 	max-width: 350px;
 	max-height: 400px
 }
 
-#card1{
-	margin-left: 150px
-}
 
-#card2{
-	margin-left: 78px
-}
-
-#card3{
-	margin-left: 0px
-}
 
 #bt1 {
     background-color: ;
