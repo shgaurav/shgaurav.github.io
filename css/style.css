@@ -278,7 +278,7 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
     /*-----------Navbar section on mobile -----------------*/
    
     .navbar {
-        display: none;
+        display: none
     }
     
 
@@ -343,14 +343,15 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
     }
     .aboutMeSection{
         font-size: 11.5px;
+    } 
+    
+    
+    .circular--portrait {
+        position: relative;
+        border-radius: 50%;
+        width: 165px;
+        height: 165px;
+        margin-top: 8%;
+        background: white;
     }
-    
-    .nav {
-        display: none;
-    }
-    
-    
-    
-    
-    
 }
