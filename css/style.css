@@ -1,15 +1,12 @@
-.navbar {
-    background-color: #263238;
-    color: white;
-    padding-left: 495px
-}
 
+/*------------- OVERALL LAYOUT ------------*/
 body {
   font-family: 'Roboto', serif;
 }
 
 html {
-    overflow-y: hidden
+   overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 .w3-jumbo::first-letter {
@@ -17,11 +14,40 @@ html {
 
 }
 
-.parallax {
-  background: url('../parallax.jpg') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 350px;
+/*-----------NAVBAR -----------------------*/
+.navbar {
+    background-color: #263238;
+    color: white;
+    padding-left: 550px;
+}
+
+.nav-link:hover {
+	background-color: #546e7a;
+	border-radius: 50px;
+	color: white;
+}
+
+.navbar .navbar-toggle .icon-bar {
+   background-color: #BDBDBD;
+}
+
+
+.navbar-toggle {
+  right: 95%;
+  display: none;
+}
+
+/*--------------BANNER -----------------*/
+#top {
+    overflow: hidden;
+}
+
+.center {
+    display: none;
+}
+
+.container_smallIcons {
+    display: none;
 }
 
 .w3-display-topmiddle h1 {
@@ -98,7 +124,6 @@ html {
 .w3-display-topmiddle{
 	padding-top: 150px;
 	text-align: center;
-
 }
 
 .line-seperator {
@@ -111,35 +136,6 @@ html {
 	padding-top: 50px;
 	font-size: 50px;
 }
-
-.heading3{
-	font-size: 50px;
-}
-
-
-
-
-.nav-link:hover {
-	background-color: #546e7a;
-	border-radius: 50px;
-	color: white;
-}
-
-.container_cards {
-  max-width: 1300px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 25px;
-  
-}
-
-.card {
-
-	max-width: 350px;
-	max-height: 400px
-}
-
-
 
 #bt1 {
     background-color: ;
@@ -203,8 +199,35 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 
 }
 
+/*-----------PORTFOLIO ----------------*/
+.heading3{
+	font-size: 50px;
+}
+
+.container_cards {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+}
+
+.card {
+	max-width: 350px;
+	max-height: 400px
+}
+
+
 #space1 {
 	padding-top: 10px
+}
+
+
+/*-----------PARALLAX EFFECT FOR QUOTE -----------------------*/
+.parallax {
+  background: url('../parallax.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 350px;
 }
 
 .quoteSection{
@@ -218,15 +241,13 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 
 }
 
+/*---------------------ABOUT ME-----------------------------*/
 .aboutme{
 	padding-top: 15px;
-
-
 }
 
 .aboutMeSection{
 	padding-bottom: 50px;
-
 }
 
 .circular--portrait {
@@ -235,6 +256,7 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
   border-radius: 50%;
 }
 
+/*--------------------FOOTER -------------------------------*/
 .contactme{
 	text-align: center;
 }
@@ -249,6 +271,86 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 	margin-top: 20px;
 }
 
-.brand {
-	text-align: right;
+/*-------------------MEDIA!!-----------------------*/
+
+@media screen and (max-width: 768px){
+    
+    /*-----------Navbar section on mobile -----------------*/
+   
+    .navbar {
+        display: none;
+    }
+    
+
+    
+    /*-----------Banner section on mobile -----------------*/
+    
+    #top{
+        max-height: 500px;
+    }
+    
+      .heading1 {
+        text-indent: -9999px;
+        line-height: 0; /* Collapse the original line */
+    }
+
+    .heading1::after {
+        content: "Gaurav Sharma";
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 100px;
+        text-indent: 0;
+        display: block;
+        line-height: initial; /* New content takes up original line height */
+    }
+    
+    .container_smallIcons {
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: 70%;
+        width: 100%;
+    }
+    
+    .btnicon_m {
+	   height: 35px;
+	   width: 35px;
+	   border-radius:50%;
+    }
+    
+    .line-seperator {
+	   display: none;
+    }
+    
+    .heading3 {
+        display: none;
+    }
+    
+    #bt1, #bt2 , #bt3, #bt4 {
+        display: none;
+    }
+    
+    /*------------Quote section on mobile -----------------*/
+    
+    .quote {
+        font-size: 14px;
+    }
+    
+    /*-------------About me section on mobile ---------------*/
+    #abtme h2 {
+        font-size: 20px;
+    }
+    .aboutMeSection{
+        font-size: 11.5px;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    
+    
+    
+    
 }
