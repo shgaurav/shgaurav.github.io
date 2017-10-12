@@ -227,18 +227,18 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
   background: url('../parallax.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 210px;
+  height: 230px;
 }
 
 .quoteSection{
 	background-color: #78909C;
 	margin-top: 7px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 	color: white;
 }
 
 .quote {
-	font-size: 22px;
+	font-size: 18px;
 
 }
 
