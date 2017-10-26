@@ -1,3 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,500);
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+
 
 /*------------- OVERALL LAYOUT ------------*/
 body {
@@ -18,7 +28,7 @@ html {
 .navbar {
     background-color: #263238;
     color: white;
-    padding-left: 550px;
+    padding-left: 650px;
 }
 
 .nav-link:hover {
@@ -39,7 +49,17 @@ html {
 
 /*--------------BANNER -----------------*/
 #top {
-    overflow: hidden;
+	
+	padding-top: none;    
+    height: 99.5%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+	overflow: hidden;
+	
 }
 
 .center {
@@ -51,94 +71,99 @@ html {
 }
 
 .w3-display-topmiddle h1 {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 4em;
-  color: rgba(255,255,255,.50);
-  background-image: url(http://viktor-cegan.wz.cz/ryba2.png);
-  background-repeat: repeat-x;
-
-  -webkit-background-clip: text;
-  animation: animate 15s linear infinite
+  color: #263238;
+  font-size: 2.0em;
+  padding-top: none;
+  font-family : 'consolas';
+  animation: type 4s steps(32);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  width : 10;
 }
+
+@keyframes type {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 32ch;
+  }
+}
+
+.w3-display-topmiddle span {
+	display: none;
+}
+
+/** Fade In Effect */
+#fadein {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.circular--portrait1 {
+        position: relative;
+        border-radius: 50%;
+        width: 170px;
+        height: 170px;
+        margin-top: 2%;
+        background: white;
+		
+    }    
 
 .w3-display-topmiddle h3{
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  color: rgba(255,255,255,.60);
-  background-image: url(http://viktor-cegan.wz.cz/ryba2.png);
-  background-repeat: repeat-x;
-  -webkit-background-clip: text;
-  animation: animate2 15s linear infinite
+  color: #263238;
+  font-size: 1.5em;
+  padding-top: 30px;
+  font-family : 'consolas';
+  overflow: hidden;
 }
 
-@keyframes animate
-{
-  0%
-  {
-    background-position: left 0px top 80px;
-  }
 
-   40%
-  {
-    background-position: left 800px top -50px;
-  }
 
-    80%
-  {
-    background-position: left 1800px top -50px;
-  }
-
-    100%
-  {
-    background-position: left 2400px top 80px;
-  }
-}
-
-@keyframes animate2
-{
-  0%
-  {
-    background-position: left 0px top 80px;
-  }
-
-   40%
-  {
-    background-position: left 800px top -50px;
-  }
-
-    80%
-  {
-    background-position: left 1800px top -50px;
-  }
-
-    100%
-  {
-    background-position: left 2400px top 80px;
-  }
-}
 
 .w3-display-topmiddle{
 	padding-top: 150px;
 	text-align: center;
 }
 
-.line-seperator {
-	height:1px;
-	background:#717171;
-	border-bottom:4px solid #313030;
-}
-
-.heading2{
-	padding-top: 50px;
-	font-size: 50px;
-}
 
 #bt1 {
-    background-color: ;
+    background-color: #ff6c40;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
@@ -151,7 +176,7 @@ html {
 }
 
 #bt2 {
-    background-color: ;
+    background-color: #ff6c40;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
@@ -164,7 +189,7 @@ html {
 }
 
 #bt3 {
-    background-color: ;
+    background-color: #ff6c40;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
@@ -177,7 +202,7 @@ html {
 }
 
 #bt4 {
-    background-color: ;
+    background-color: #ff6c40;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
@@ -200,7 +225,9 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 }
 
 /*-----------PORTFOLIO ----------------*/
-.heading3{
+
+.heading2{
+	padding-top: 50px;
 	font-size: 50px;
 }
 
@@ -238,23 +265,24 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 }
 
 .quote {
-	font-size: 18px;
+	font-size: 20px;
 
 }
 
 /*---------------------ABOUT ME-----------------------------*/
 .aboutme{
 	padding-top: 15px;
+	margin-left: 282px;
 }
 
 .aboutMeSection{
 	padding-bottom: 50px;
 }
 
-.circular--portrait {
-  width: 275px;
-  height: 275px;
-  border-radius: 50%;
+
+
+.circular--portrait2 {
+	display: none;
 }
 
 /*--------------------FOOTER -------------------------------*/
@@ -287,30 +315,31 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
     /*-----------Banner section on mobile -----------------*/
     
     #top{
-        max-height: 500px;
+        max-height: 350px;
     }
+	
+	.w3-display-topmiddle h1 {
+		display: none;
+	}
     
-      .heading1 {
-        text-indent: -9999px;
-        line-height: 0; /* Collapse the original line */
-    }
-
-    .heading1::after {
-        content: "Gaurav Sharma";
-        font-size: 30px;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 100px;
-        text-indent: 0;
-        display: block;
-        line-height: initial; /* New content takes up original line height */
-    }
-    
-    .container_smallIcons {
+	
+	.circular--portrait1 {
+		display: none;
+	}
+	
+	.w3-display-topmiddle span {
+		display: inline;
+		font-size: 23px;
+		color: #263238;
+		padding-bottom: 50px;
+		
+	}
+	
+	.container_smallIcons {
         display: inline;
-        position: absolute;
+        position: relative;
         left: 0;
-        top: 70%;
+        top: 99%;
         width: 100%;
     }
     
@@ -320,9 +349,6 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
 	   border-radius:50%;
     }
     
-    .line-seperator {
-	   display: none;
-    }
     
     .heading3 {
         display: none;
@@ -334,25 +360,42 @@ background: #fff; /* fallback color for old browsers */background: rgba(255, 255
     
     /*------------Quote section on mobile -----------------*/
     
-    .quote {
-        font-size: 14px;
-    }
+    .parallax {
+  	background: url('../parallax.jpg') no-repeat center;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	height: 285px;	
+	}
+
+	.quoteSection{
+	background-color: #78909C;
+	margin-top: 7px;
+    margin-bottom: 30px;
+	color: white;
+	}
+
+	.quote {
+	font-size: 16px;
+
+	}
     
     /*-------------About me section on mobile ---------------*/
     #abtme h2 {
         font-size: 20px;
     }
+	
+	.aboutme{
+		margin-left: 0;
+	}
     .aboutMeSection{
-        font-size: 11.5px;
+        font-size: 14px;
     } 
     
-    
-    .circular--portrait {
-        position: relative;
-        border-radius: 50%;
-        width: 165px;
-        height: 165px;
-        margin-top: 8%;
-        background: white;
-    }    
+    .circular--portrait2 {
+		display: inline;
+		padding-top: 10px;
+  		width: 220px;
+  		height: 220px;
+  		border-radius: 50%;
+	}   
 }
